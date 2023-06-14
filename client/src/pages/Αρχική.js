@@ -8,10 +8,10 @@ const Αρχική = () => {
 
   return (
     <>
-      <ΓραμμήΠλοήγησης />
+      <ΓραμμήΠλοήγησης className="πλοήγηση" />
       <Main>
         <ΚοινήΔιάταξη />
-        <section className="section sec1 ποιος-είμαι" id="ποιος-είμαι">
+        {/* <section className="section sec1 ποιος-είμαι" id="ποιος-είμαι">
           Ποιος Είμαι
         </section>
         <section className="section sec2 τεχνολογίες" id="τεχνολογίες">
@@ -25,13 +25,14 @@ const Αρχική = () => {
         </section>
         <section className="section sec5 επικοινωνία" id="επικοινωνία">
           Επικοινωνία
-        </section>
+        </section> */}
       </Main>
     </>
   );
 };
 
 const Main = styled.main`
+
   h1 {
     display: flex;
     flex-direction: column;

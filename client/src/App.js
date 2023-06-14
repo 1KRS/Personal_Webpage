@@ -1,25 +1,29 @@
-import 'normalize.css'
-import './App.css';
-import styled from 'styled-components';
+import 'normalize.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Αρχική, Εισαγωγική } from './pages';
+import { Έργα } from './components';
 
 function App() {
   return (
     <>
-      <Wrapper className="App">
-        <h1>🇬🇷🇬🇷🇬🇷</h1>
-        <h1>Ούλε τε και μάλα χαίρε!</h1>
-        <h1>🤩</h1>
-      </Wrapper>
+      <div className='κατασκευή'>Υπό Κατασκευή!!</div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Αρχική />}>
+            <Route
+              path={'τεχνολογίες' || 'technologies' || 'tekniker'}
+              element={<Έργα />}
+            />
+            <Route
+              path={'έργα' || 'projects' || 'projekt'}
+              element={<Έργα />}
+            />
+          </Route>
+          <Route path="/landing" element={<Εισαγωγική />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
-
-const Wrapper = styled.main`
-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
 
 export default App;
