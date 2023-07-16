@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Αρχική />}>
             <Route
-              path={'ποιος-είμαι' || 'who-am-i' || 'färdigheter'}
+              path={'ποιος-είμαι' || 'who-am-i' || 'vem-är-jag'}
               element={<ΠοιοςΕίμαι />}
             />
             <Route
@@ -27,7 +27,7 @@ function App() {
               element={<Δεξιότητες />}
             />
             <Route
-              path={'επικοινωνία' || 'contact' || 'Kontakt'}
+              path={'επικοινωνία' || 'contact' || 'kontakt'}
               element={<Επικοινωνία />}
             />
             <Route
@@ -35,7 +35,7 @@ function App() {
               element={<Έργα />}
             />
             <Route
-              path={'τεχνολογίες' || 'technologies' || 'tekniker'}
+              path={'τεχνολογίες' || 'technologies' || 'c'}
               element={<Τεχνολογίες />}
             />
             <Route
