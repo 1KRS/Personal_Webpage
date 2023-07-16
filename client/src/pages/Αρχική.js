@@ -1,15 +1,18 @@
+import BackgroundAnimation from '../components/αρχική/BackgroundAnimation';
 import styled from 'styled-components';
 
-import { useState } from 'react';
-import { ΓραμμήΠλοήγησης, ΚοινήΔιάταξη } from '../components/αρχική';
+// import { useState } from 'react';
+import { ΓραμμήΠλοήγησης, Ηρώο, ΚοινήΔιάταξη } from '../components/αρχική';
 
 const Αρχική = () => {
-  const [activeSection, setActiveSection] = useState('ποιος-είμαι');
-
   return (
     <>
       <ΓραμμήΠλοήγησης className="πλοήγηση" />
       <Main>
+        <Section grid>
+          <Ηρώο />
+          <BackgroundAnimation />
+        </Section>
         <ΚοινήΔιάταξη />
         {/* <section className="section sec1 ποιος-είμαι" id="ποιος-είμαι">
           Ποιος Είμαι
@@ -32,7 +35,6 @@ const Αρχική = () => {
 };
 
 const Main = styled.main`
-
   h1 {
     display: flex;
     flex-direction: column;
@@ -48,4 +50,19 @@ const Main = styled.main`
     transform: translateY(0) scale(1);
   }
 `;
+
+const Section = styled.section`
+  display: ${(props) => (props.grid ? 'grid' : 'flex')};
+  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
+  padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
+  margin: 0 auto;
+  max-width: 1500px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  z-index: 1000;
+`;
+
+
 export default Αρχική;
