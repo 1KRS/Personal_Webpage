@@ -1,4 +1,4 @@
-import translateText from "../utils/translateText";
+import translateText from '../utils/μετάφρασηΚειμένου';
 // import initialState from './initialState';
 
 const reducer = (state, action) => {
@@ -13,6 +13,7 @@ const reducer = (state, action) => {
       ),
     };
   }
+
   if (action.type === 'CLEAR_ALERT') {
     return {
       ...state,
@@ -20,6 +21,20 @@ const reducer = (state, action) => {
       alertType: '',
       alertText: '',
     };
-  }}
+  }
 
-  export default reducer
+  if (action.type === 'CHANGE_LANGUAGE') {
+    return {
+      ...state,
+      γλώσσα: action.payload.νέαΓλώσσα,
+    };
+  }
+  if (action.type === 'TOGGLE_SECTION') {
+    return {
+      ...state,
+      τομέαςΑρχικής: action.payload.newSection,
+    };
+  }
+};
+
+export default reducer;
