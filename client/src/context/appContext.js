@@ -31,11 +31,19 @@ const AppProvider = ({ children }) => {
     }, 5000);
   };
 
-  const changeLanguage = (newLanguage) => {
-    localStorage.setItem('language', newLanguage);
+  const changeLanguage = (νέαΓλώσσα) => {
+    localStorage.setItem('γλώσσα', νέαΓλώσσα);
     dispatch({
       type: 'CHANGE_LANGUAGE',
-      payload: { newLanguage },
+      payload: { νέαΓλώσσα },
+    });
+  };
+
+  const toggleSection = (newSection) => {
+    console.log(newSection)
+    dispatch({
+      type: 'TOGGLE_SECTION',
+      payload: { newSection },
     });
   };
 
@@ -45,6 +53,7 @@ const AppProvider = ({ children }) => {
         ...state,
         displayAlert,
         changeLanguage,
+        toggleSection
       }}
     >
       {children}
