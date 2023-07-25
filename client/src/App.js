@@ -7,14 +7,19 @@ import {
   Επικοινωνία,
   Έργα,
   ΠοιοςΕίμαι,
-  Τεχνολογίες
+  Τεχνολογίες,
 } from './components';
+import μετάφραση from './utils/μετάφραση';
 import styled from 'styled-components';
+import { useAppContext } from './context/appContext';
 
 function App() {
+  const { γλώσσα } = useAppContext();
   return (
     <Περιέκτης>
-      <nav className="υπό-κατασκευή πλοήγηση">🚧 Υπό Κατασκευή 🚧 Under Construction 🚧</nav>
+      <nav className="υπό-κατασκευή πλοήγηση">
+        {μετάφραση('🚧 🚧 Υπό Κατασκευή 🚧 🚧', γλώσσα)}
+      </nav>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Αρχική />}>
@@ -35,7 +40,7 @@ function App() {
               element={<Έργα />}
             />
             <Route
-              path={'τεχνολογίες' || 'technologies' || 'c'}
+              path={'τεχνολογίες' || 'technologies' || 'tekniker'}
               element={<Τεχνολογίες />}
             />
             <Route
@@ -51,13 +56,12 @@ function App() {
 }
 
 const Περιέκτης = styled.div`
-.υπό-κατασκευή{
-  background: red;
-text-align: center;
-font-size: 25px;
-font-weight: bold;
-}
-
-`
+  .υπό-κατασκευή {
+    background: darkred;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+`;
 
 export default App;
