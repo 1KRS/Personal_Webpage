@@ -1,36 +1,37 @@
 import { useAppContext } from '../../context/appContext';
 // import Λογότυπο from '../Λογότυπο';
+import ΚινούμενηΕικόναΥποβάθρου from './ΚινούμενηΕικόναΥποβάθρου';
 import styled from 'styled-components';
 import { πληροφορίεςΤομέα } from '../../db/ΠληροφορίεςΤομέα';
-import μετάφρασηΚειμένου from '../../utils/μετάφρασηΚειμένου.js';
+import μετάφραση from '../../utils/μετάφραση.js';
 
 const Ηρώο = () => {
   const { γλώσσα, τομέαςΑρχικής } = useAppContext();
   const ευρετήριοΌρου = πληροφορίεςΤομέα.τίτλος.findIndex(
-    (e) => e === τομέαςΑρχικής
+    (ε) => ε === τομέαςΑρχικής
   );
 
   const κείμενοΤομέα = πληροφορίεςΤομέα.κείμενο[ευρετήριοΌρου];
   return (
-    <Τομέας row nopadding>
-      <LeftSection>
-        <SectionTitle main>
-          {τομέαςΑρχικής === 'ηρώο'
-            ? μετάφρασηΚειμένου(
-                'Καλώς ήλθες στον ιστότοπό μου.',
-                γλώσσα
-              )
-            : μετάφρασηΚειμένου(τομέαςΑρχικής, γλώσσα)}
-        </SectionTitle>
-        <SectionText>{μετάφρασηΚειμένου(κείμενοΤομέα, γλώσσα)}</SectionText>
-      </LeftSection>
-      {/* <RightSection>
-        <Λογότυπο />
-        <SectionTitle main>
+    <Τομέας nopadding>
+      <ΣτήλεςΤομέα row>
+        <ΑριστερήΣτήλη>
+          <ΤίτλοςΤομέα main>
+            {τομέαςΑρχικής === 'ηρώο'
+              ? μετάφραση('Καλώς ήλθες στον ιστότοπό μου.', γλώσσα)
+              : μετάφραση(τομέαςΑρχικής, γλώσσα)}
+          </ΤίτλοςΤομέα>
+          <ΚείμενοΤομέα>{μετάφραση(κείμενοΤομέα, γλώσσα)}</ΚείμενοΤομέα>
+        </ΑριστερήΣτήλη>
+        <ΔεξιάΣτήλη>
+          {/* <Λογότυπο /> */}
+          {/* <SectionTitle main>
             Καλώς ήλθατε στον <br />
             προσωπικό μου ιστότοπο.
-          </SectionTitle>
-      </RightSection> */}
+          </SectionTitle> */}
+          <ΚινούμενηΕικόναΥποβάθρου />
+        </ΔεξιάΣτήλη>
+      </ΣτήλεςΤομέα>
     </Τομέας>
   );
 };
@@ -41,7 +42,8 @@ const Τομέας = styled.section`
   padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
   align-items: center;
   margin: 0 auto;
-  max-width: 1040px;
+  width: 1500px;
+  height: 500px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -49,14 +51,7 @@ const Τομέας = styled.section`
   z-index: 1000;
 `;
 
-const LeftSection = styled.div`
-  width: 100%;
-`;
-const RightSection = styled.div`
-  width: 50%;
-`;
-
-const SectionTitle = styled.h2`
+const ΤίτλοςΤομέα = styled.h2`
   font-size: ${(props) => (props.main ? '65px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
   padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
@@ -74,13 +69,48 @@ const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
 `;
 
-const SectionText = styled.p`
-  /* max-width: 800px; */
+const ΣτήλεςΤομέα = styled.div`
+  display: ${(props) => (props.grid ? 'grid' : 'flex')};
+  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
+  font-size: ${(props) => (props.main ? '65px' : '56px')};
+  line-height: ${(props) => (props.main ? '72px' : '56px')};
+  padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+  margin-bottom: 0.6rem;
+  font-weight: 800;
   width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+const ΑριστερήΣτήλη = styled.div`
+  width: max-content;
+  max-width: 750px;
+  height: 500px;
+  margin-right: 25px;
+`;
+
+const ΔεξιάΣτήλη = styled.div`
+  width: max-content;
+  max-width: 750px;
+  height: 450px;
+  padding-top: 125px;
+  margin-left: 25px;
+`;
+
+const ΚείμενοΤομέα = styled.p`
+  width: max-content;
+  max-width: 750px;
+  height: 350px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: left;
 `;
