@@ -20,8 +20,8 @@ const AppProvider = ({ children }) => {
   // response interceptor
 
   // Λειτουργίες
-  const displayAlert = (language) => {
-    dispatch({ type: 'DISPLAY_ALERT', payload: { language } });
+  const displayAlert = (γλώσσα) => {
+    dispatch({ type: 'DISPLAY_ALERT', payload: { γλώσσα } });
     clearAlert();
   };
 
@@ -31,19 +31,19 @@ const AppProvider = ({ children }) => {
     }, 5000);
   };
 
-  const changeLanguage = (νέαΓλώσσα) => {
+  const αλλαγήΓλώσσας = (νέαΓλώσσα) => {
     localStorage.setItem('γλώσσα', νέαΓλώσσα);
     dispatch({
-      type: 'CHANGE_LANGUAGE',
+      type: 'ΑΛΛΑΓΗ_ΓΛΩΣΣΑΣ',
       payload: { νέαΓλώσσα },
     });
   };
 
-  const toggleSection = (newSection) => {
-    console.log(newSection)
+  const toggleSection = (νέοςΤομέας) => {
+    console.log(νέοςΤομέας)
     dispatch({
       type: 'TOGGLE_SECTION',
-      payload: { newSection },
+      payload: { νέοςΤομέας },
     });
   };
 
@@ -52,7 +52,7 @@ const AppProvider = ({ children }) => {
       value={{
         ...state,
         displayAlert,
-        changeLanguage,
+        αλλαγήΓλώσσας,
         toggleSection
       }}
     >

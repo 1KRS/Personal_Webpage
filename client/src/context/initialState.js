@@ -1,5 +1,5 @@
 const initialState = {
-  γλώσσα: localStorage.getItem('γλώσσα') || 'ελληνικά',
+  γλώσσα: localStorage.getItem('γλώσσα') || localStorage.getItem('language') || 'ελληνικά',
   userLocation: '',
   userLoading: true,
   isLoading: false,

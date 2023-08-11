@@ -1,4 +1,4 @@
-import translateText from '../utils/μετάφρασηΚειμένου';
+import translateText from '../utils/μετάφραση';
 // import initialState from './initialState';
 
 const reducer = (state, action) => {
@@ -9,7 +9,7 @@ const reducer = (state, action) => {
       alertType: 'danger',
       alertText: translateText(
         'Συμπλήρωσε όλα τα πεδία!',
-        `${action.payload.language}`
+        `${action.payload.γλώσσα}`
       ),
     };
   }
@@ -23,7 +23,7 @@ const reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'CHANGE_LANGUAGE') {
+  if (action.type === 'ΑΛΛΑΓΗ_ΓΛΩΣΣΑΣ') {
     return {
       ...state,
       γλώσσα: action.payload.νέαΓλώσσα,
@@ -32,7 +32,7 @@ const reducer = (state, action) => {
   if (action.type === 'TOGGLE_SECTION') {
     return {
       ...state,
-      τομέαςΑρχικής: action.payload.newSection,
+      τομέαςΑρχικής: action.payload.νέοςΤομέας,
     };
   }
 };
