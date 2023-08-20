@@ -77,7 +77,7 @@ const ΣτήλεςΤομέα = styled.div`
   padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
   margin-bottom: 0.6rem;
   font-weight: 800;
-  width: max-content;
+  width: 100%;
   max-width: 100%;
   background: linear-gradient(
     121.57deg,
@@ -90,23 +90,23 @@ const ΣτήλεςΤομέα = styled.div`
 `;
 
 const ΑριστερήΣτήλη = styled.div`
-  width: max-content;
-  max-width: 750px;
+  width: 100%;
+  max-width: 1100px;
   height: 500px;
   margin-right: 25px;
 `;
 
 const ΔεξιάΣτήλη = styled.div`
-  width: max-content;
-  max-width: 750px;
-  height: 450px;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
   padding-top: 125px;
   margin-left: 25px;
 `;
 
 const ΚείμενοΤομέα = styled.p`
-  width: max-content;
-  max-width: 750px;
+  width: 100%;
+  max-width: 1100px;
   height: 350px;
   font-size: 24px;
   line-height: 40px;
