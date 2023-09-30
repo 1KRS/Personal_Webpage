@@ -1,3 +1,5 @@
+import { πληροφορίεςΤομέα } from './ΠληροφορίεςΤομέα';
+
 export const ελληνικάΚείμενα = [
   'ηρώο',
   'ποιος είμαι',
@@ -10,12 +12,13 @@ export const ελληνικάΚείμενα = [
   'Καλώς ήλθες στον ιστότοπό μου.',
   'gr',
   'el',
-  'Εδώ μπορείτε να εξερευνήσετε την επαγγελματική μου πορεία, τις επιτυχίες μου και λοιπές προσωπικές και επαγγελματικές μου πληροφορίες. Αναζητώ πάντα την καινοτομία και την αριστεία σε αυτό που κάνω και ανυπομονώ να μοιραστώ την εμπειρία μου μαζί σας. Εξερευνήστε ελεύθερα τον ιστότοπό μου και επικοινωνήστε μαζί μου για οποιαδήποτε ερώτηση ή συνεργασία. Ευχαριστώ για το ενδιαφέρον σας!',
-  'Είμαι ένας περήφανος Έλληνας που αποφοίτησε ως Πολιτικός Μηχανικός από το Πανεπιστήμιο του Πόρτσμουθ και με μεταπτυχιακές σπουδές στην αυτογενή αναγέννηση σκυροδέματος με ανακυκλώσιμο γυαλί. Μετά από 14 χρόνια γενικής εργασίας στην Ελλάδα, μετακόμισα στη Σουηδία για να εξερευνήσω νέες ευκαιρίες ως προγραμματιστής. Μετά από συναρπαστικές περιόδους σπουδών, είμαι έτοιμος να ξεκινήσω ως Νέος Προγραμματιστής Πλήρους Στοίβας.',
-  'Ο κόσμος της τεχνολογίας είναι ένας ατέλειωτος ορίζοντας που συνεχώς εξελίσσεται και παρουσιάζει απεριόριστες δυνατότητες. Στην παρακάτω λίστα, μπορείτε να εξερευνήσετε τις τεχνολογίες που χρησιμοποιώ και που αποτελούν το εργαλείο μου για τη δημιουργία και την επίλυση προβλημάτων. Από προγραμματιστικές γλώσσες μέχρι εργαλεία ανάπτυξης και πλατφόρμες, η λίστα αυτή παρέχει μια εισαγωγή στον κόσμο των τεχνολογιών που χρησιμοποιώ.',
-  'Βλέπω την κωδικοποίηση ως εκείνη την δημιουργική πύλη μέσω της οποίας μπορώ να δημιουργήσω καινοτόμες και λειτουργικες λύσεις. Στην παρακάτω λίστα, μπορείτε να εξερευνήσετε την ποικιλία των έργων μου. Κάθε ένα από αυτά αποτελεί έναν κώδικα που ζωντανεύει, μια λύση που επιτυγχάνει στόχους και αναπτύσσεται με σκοπό την αποτελεσματικότητα και την προηγμένη τεχνολογία. Παρακάτω μπορείτε να δείτε να δείτε κάποιες από αυτές τις λύσεις.',
-  'Στην πορεία της σταδιοδρομίας μου, έχω αποκτήσει πολύτιμες δεξιότητες και εμπειρία σε διάφορους τομείς, που αποτελούν μια ισχυρή βάση για την αποτελεσματική προσέγγιση και αντιμετώπιση προκλήσεων σε οποιονδήποτε τομέα εργασίας. Παρακάτω μπορείτε να δείτε κάποιες εξ αυτών στις οποίες μπορώ να βασιστώ προσωπικά αλλά και η ομάδα στην οποία ίσως ανήκω για την επίλυση οποιουδήποτε προβλήματος ενδέχεται να προκύψει.',
-  'Το εύρος των ενδιαφερόντων μου αποτελεί μια συναρπαστική πτυχή της προσωπικότητάς μου καθώς ο κόσμος είναι γεμάτος από εκπληκτικές εμπειρίες και περιπέτειες. Στη λίστα που ακολουθεί μπορείτε να ανακαλύψετε την ποικιλία των πεδίων που με συναρπάζουν και με εμπνέουν. Από συναρπαστικές εμπειρίες μέχρι αυθεντικές ανακαλύψεις, τα ενδιαφέροντά μου αποτελούν έναν παράγοντα που διαμορφώνει την οπτική μου και την κρίση μου.',
+  '🚧 🚧 Υπό Κατασκευή 🚧 🚧',
+  πληροφορίεςΤομέα.κείμενο[0],
+  πληροφορίεςΤομέα.κείμενο[1],
+  πληροφορίεςΤομέα.κείμενο[2],
+  πληροφορίεςΤομέα.κείμενο[3],
+  πληροφορίεςΤομέα.κείμενο[4],
+  πληροφορίεςΤομέα.κείμενο[5],
 ];
 
 export const αγγλικάΚείμενα = [
@@ -30,9 +33,10 @@ export const αγγλικάΚείμενα = [
   'Welcome to my personal website.',
   'uk',
   'en',
+  '🚧 🚧 Under Construction 🚧 🚧',
   'Here you can explore my career path, my achievements and other personal and professional information. I am always looking for innovation and excellence in what I do and look forward to sharing my experience with you. Feel free to explore my website and contact me for any question or collaboration. Thank you for your interest!',
   "I am a proud Greek who graduated as a Civil Engineer from the University of Portsmouth and with a postgraduate studies in autogenous regeneration of concrete with recyclable glass. After 14 years of general work in Greece, I moved to Sweden to explore new opportunities as a developer. After exciting periods of study, I'm ready to start as a New Full Stack Developer.",
-  'The world of technology is an endless horizon that is constantly evolving and presents unlimited possibilities. In the list below, you can explore the technologies I use that are my tool for creating and solving problems. From programming languages to development tools and platforms, this list provides an introduction to the world of technologies I use.',
+  'The world of technology is an endless horizon that is constantly evolving and presents unlimited possibilities. In the list below, you can explore the technologies I use that are my tools for developing ideas and solving problems. From programming languages to development tools and platforms, this list provides an introduction to the world of technologies I use.',
   'I see coding as that creative gateway through which I can create innovative and functional solutions. In the list below, you can explore the variety of my works. Each of them is code that comes to life, a solution that achieves goals and is developed for efficiency and advanced technology. Below you can see see some of these solutions.',
   'In the course of my career, I have acquired valuable skills and experience in various fields, which form a strong foundation for effectively approaching and dealing with challenges in any field of work. Below you can see some of them that I can personally rely on as well as the team that I may be a part of to solve any problem that may arise.',
   'The breadth of my interests is an exciting aspect of my personality as the world is full of amazing experiences and adventures. In the following list you can discover the variety of fields that fascinate and inspire me. From exciting experiences to authentic discoveries, my interests are a factor that shapes my perspective and judgement.',
@@ -41,7 +45,7 @@ export const αγγλικάΚείμενα = [
 export const σουηδικάΚείμενα = [
   'hjälte',
   'vem är jag',
-  'projekt',
+  'tekniker',
   'projekt',
   'färdigheter',
   'intressen',
@@ -50,9 +54,10 @@ export const σουηδικάΚείμενα = [
   'Välkommen till min personliga hemsida.',
   'se',
   'swe',
+  '🚧 🚧 Under Konstruktion 🚧 🚧',
   'Här kan du utforska min karriärväg, mina prestationer och annan personlig och professionell information. Jag letar alltid efter innovation och excellens i det jag gör och ser fram emot att dela min erfarenhet med dig. Utforska gärna min hemsida och kontakta mig för frågor eller samarbete. Tack för ditt intresse!',
   'Jag är en stolt grek som tog examen som civilingenjör från University of Portsmouth och med en forskarutbildning i autogen regenerering av betong med återvinningsbart glas. Efter 14 års allmänt arbete i Grekland flyttade jag till Sverige för att utforska nya möjligheter som utvecklare. Efter spännande perioder av studier är jag redo att börja som New Full Stack-utvecklare.',
-  'Teknikens värld är en oändlig horisont som ständigt utvecklas och erbjuder obegränsade möjligheter. I listan nedan kan du utforska de teknologier jag använder som är mitt verktyg för att skapa och lösa problem. Från programmeringsspråk till utvecklingsverktyg och plattformar, den här listan ger en introduktion till världen av teknologier jag använder.',
+  'Teknikens värld är en oändlig horisont som ständigt utvecklas och erbjuder obegränsade möjligheter. I listan nedan kan du utforska de teknologier jag använder som är mitt verktyg för att utveckla idéer och lösa problem. Från programmeringsspråk till utvecklingsverktyg och plattformar, den här listan ger en introduktion till världen av teknologier jag använder.',
   'Jag ser kodning som den kreativa inkörsporten genom vilken jag kan skapa innovativa och funktionella lösningar. I listan nedan kan du utforska mångfalden av mina verk. Var och en av dem är kod som kommer till liv, en lösning som uppnår mål och är utvecklad för effektivitet och avancerad teknik. Nedan kan du se några av dessa lösningar.',
   'Under loppet av min karriär har jag skaffat mig värdefull kompetens och erfarenhet inom olika områden, vilket utgör en stark grund för att effektivt närma sig och hantera utmaningar inom alla arbetsområden. Nedan kan du se några av dem som jag personligen kan lita på samt teamet som jag kan vara en del av för att lösa alla problem som kan uppstå.',
   'Bredden av mina intressen är en spännande aspekt av min personlighet eftersom världen är full av fantastiska upplevelser och äventyr. I listan nedan kan du upptäcka mångfalden av områden som fascinerar och inspirerar mig. Från spännande upplevelser till autentiska upptäckter, mina intressen är en faktor som formar mitt perspektiv och mitt omdöme.',
