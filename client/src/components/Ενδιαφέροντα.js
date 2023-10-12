@@ -14,7 +14,7 @@ import {
   MdForest,
   BsMusicNoteBeamed,
   IoIosCar,
-} from '../assets/icons/εικονίδιαReact';
+} from './εικονίδιαReact';
 import { ΔιαχωριστήςΤομέαΠάνω, ΔιαχωριστήςΤομέαΚάτω } from './αρχική';
 import styled from 'styled-components';
 

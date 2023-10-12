@@ -100,7 +100,7 @@ const ΔεξιάΣτήλη = styled.div`
   width: 100%;
   max-width: 400px;
   height: 500px;
-  padding-top: 125px;
+  padding: 50px 0 50px;
   margin-left: 25px;
 `;
 
